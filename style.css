@@ -1,108 +1,61 @@
 /* General Styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4 {
-    margin: 0;
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 p {
-    margin: 10px 0;
-    line-height: 1.5;
-}
-
-.btn {
-    background: #0078D7;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.btn:hover {
-    background: #005ea3;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Hero Section */
-.hero {
-    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+.slide .content {
     text-align: center;
-    color: white;
-    padding: 150px 20px;
+    color: #fff;
 }
 
-.hero h1 {
-    font-size: 3rem;
-}
-
-.hero h2 {
-    margin: 10px 0;
-    font-size: 2rem;
-}
-
-/* About Section */
-.about, .features, .cta, .portfolio, .team, .contact {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.about-cards, .feature-list, .portfolio-gallery, .team-members {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.card, .feature, .member {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    width: 200px;
-    text-align: center;
-}
-
-/* Call to Action */
-.cta {
+.button {
+    padding: 10px 20px;
     background: #0078D7;
-    color: white;
-    padding: 50px;
-}
-
-/* Portfolio */
-.portfolio-gallery img {
-    width: 100%;
-    max-width: 300px;
+    color: #fff;
     border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Team */
-.team-members img {
-    border-radius: 50%;
+/* About, Consulting, Projects, Team */
+#about, #consulting, #projects, #team {
+    padding: 50px 20px;
+    text-align: center;
 }
 
-/* Contact */
-.contact form {
+/* Contact Form */
+form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
-    max-width: 400px;
-    margin: auto;
 }
 
-.contact form input, .contact form textarea {
+form input, form textarea {
+    width: 80%;
+    max-width: 400px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.contact form button {
-    margin-top: 10px;
+form button {
+    background: #004080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
 }
 
 /* Footer */
@@ -111,4 +64,5 @@ footer {
     background: #333;
     color: white;
     padding: 10px 0;
+    margin-top: 20px;
 }
